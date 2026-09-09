@@ -657,6 +657,10 @@ section:nth-of-type(even) {
   margin-bottom: 0.4rem;
 }
 
+.pub-tags {
+  margin-bottom: 0;
+}
+
 /* --------------------------------------------------------------------------
    9. Conferences Section
    -------------------------------------------------------------------------- */
@@ -681,7 +685,8 @@ section:nth-of-type(even) {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
+  column-gap: 0.5rem;
+  row-gap: 0.4rem;
   flex-wrap: wrap;
 }
 
@@ -689,7 +694,8 @@ section:nth-of-type(even) {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.4rem;
+  column-gap: 0.4rem;
+  row-gap: 0.4rem;
   flex-wrap: wrap;
 }
 
@@ -971,6 +977,7 @@ section:nth-of-type(even) {
 
   .conference-meta {
     align-items: flex-start;
+    row-gap: 0.5rem;
   }
 
   /* Contact & Footer */
