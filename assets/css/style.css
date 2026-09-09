@@ -16,8 +16,8 @@
   --tag-bg: #f1f5f9;
 
   /* Button / Pill Metrics */
-  --pill-padding-y: 0.3rem;
-  --pill-padding-x: 0.6rem;
+  --pill-padding-y: 0.38rem;
+  --pill-padding-x: 0.75rem;
   --pill-font-size: var(--font-size-xs);
 
   /* Fonts */
@@ -25,21 +25,21 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 
   /* Spacing Tokens */
-  --space-xxs: 0.25rem;
-  --space-xs: 0.5rem;
-  --space-sm: 0.75rem;
-  --space-md: 1rem;
-  --space-lg: 1.25rem;
-  --space-xl: 1.75rem;
-  --space-section: 2.5rem;
-  --space-container: 1.25rem;
-  --space-card: 0.9rem;
+  --space-xxs: 0.35rem;
+  --space-xs: 0.65rem;
+  --space-sm: 0.95rem;
+  --space-md: 1.25rem;
+  --space-lg: 1.6rem;
+  --space-xl: 2.25rem;
+  --space-section: 3.25rem;
+  --space-container: 1.5rem;
+  --space-card: 1.15rem;
 
   /* Radii & Containers */
-  --radius-sm: 8px;
-  --radius-md: 10px;
+  --radius-sm: 9px;
+  --radius-md: 12px;
   --radius-pill: 9999px;
-  --content-width: 780px;
+  --content-width: 1140px;
 
   /* Card Surfaces */
   --card-bg: #ffffff;
@@ -47,14 +47,14 @@
   --shadow-soft: 0 10px 24px rgba(15, 23, 42, 0.04);
 
   /* Typography Scale */
-  --font-size-xs: 0.68rem;
-  --font-size-sm: 0.76rem;
-  --font-size-md: 0.86rem;
-  --font-size-lg: 0.96rem;
-  --font-size-xl: 1.14rem;
-  --font-size-xxl: 1.8rem;
-  --font-size-hero: clamp(1.58rem, 2.5vw, 2.08rem);
-  --font-size-banner: clamp(1.15rem, 1.7vw, 1.5rem);
+  --font-size-xs: 0.82rem;
+  --font-size-sm: 0.94rem;
+  --font-size-md: 1.05rem;
+  --font-size-lg: 1.22rem;
+  --font-size-xl: 1.48rem;
+  --font-size-xxl: 2.2rem;
+  --font-size-hero: clamp(2rem, 3.2vw, 2.75rem);
+  --font-size-banner: clamp(1.35rem, 2.1vw, 1.75rem);
 }
 
 /* Dark Mode Overrides (applied via data-theme="dark" on <html>) */
@@ -82,6 +82,7 @@
 }
 
 html {
+  font-size: 125%;
   scroll-behavior: smooth;
   overflow-x: clip;
   max-width: 100%;
@@ -95,7 +96,7 @@ body {
   line-height: 1.6;
   overflow-x: clip;
   max-width: 100%;
-  padding-top: 52px;
+  padding-top: 74px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -148,7 +149,7 @@ img, iframe, video, table, pre, code {
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   z-index: 9999;
-  padding: 0.4rem 0;
+  padding: 0.55rem 0;
 }
 
 .nav-flex {
@@ -261,14 +262,19 @@ img, iframe, video, table, pre, code {
   color: var(--text-muted);
   line-height: 1;
   overflow: hidden;
+  outline: none;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .icon-btn:hover,
-.icon-btn:focus,
 .icon-btn:focus-visible {
   background: var(--bg-subtle);
   color: var(--text-main);
+}
+
+.icon-btn:focus:not(:focus-visible) {
+  background: transparent;
+  outline: none;
 }
 
 .icon-btn svg {
@@ -308,7 +314,7 @@ img, iframe, video, table, pre, code {
    -------------------------------------------------------------------------- */
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-columns: minmax(0, 1fr) 350px;
   gap: var(--space-xl);
   align-items: start;
   padding: var(--space-section) 0;
@@ -373,12 +379,12 @@ img, iframe, video, table, pre, code {
 }
 
 .hero-photo {
-  width: 140px;
-  height: 140px;
+  width: 185px;
+  height: 185px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  margin: 0 auto 0.75rem;
+  margin: 0 auto 0.85rem;
   border: 1px solid var(--border);
 }
 
@@ -617,9 +623,9 @@ section:nth-of-type(even) {
    -------------------------------------------------------------------------- */
 .pub-row {
   display: grid;
-  grid-template-columns: 70px 1fr;
-  gap: 1rem;
-  padding: 1rem 0;
+  grid-template-columns: 85px 1fr;
+  gap: 1.25rem;
+  padding: 1.15rem 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -700,7 +706,7 @@ section:nth-of-type(even) {
 }
 
 .conference-content h3 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   font-weight: 600;
   margin-bottom: 0.2rem;
   letter-spacing: -0.01em;
