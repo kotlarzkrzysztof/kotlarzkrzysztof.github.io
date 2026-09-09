@@ -1,0 +1,195 @@
+---
+layout: default
+---
+
+<!-- Hero Header Area -->
+<div class="hero-grid">
+  <div>
+    <h1 class="hero-name">Bioinformatics Scientist · Genomics & AI</h1>
+    <p class="hero-role">Building scalable pipelines and interpretable AI for multi-omics, variant analysis, and precision medicine.</p>
+    <p class="hero-bio">
+      I am a bioinformatics scientist and biostatistician with a PhD in biological sciences, working across genomics, genetics data analysis, statistics, and machine learning. My work spans high-throughput sequencing workflows, rare disease and clinical variant interpretation, multi-omics integration, population-scale genetic analyses, and explainable AI approaches for biological discovery.
+    </p>
+    <div class="contact-actions hero-contact-actions">
+      <a href="mailto:{{ site.email }}" class="contact-link primary">Email me</a>
+      <a href="https://scholar.google.com/citations?hl=en&user=fhJnkk4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener" class="contact-link">Scholar</a>
+      <a href="https://github.com/kotlarzkrzysztof" target="_blank" rel="noopener" class="contact-link">GitHub</a>
+      <a href="https://www.linkedin.com/in/krzysztof-kotlarz-phd-5a24bb236" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+    </div>
+
+    <div class="tech-block">
+      <span class="tech-label">Technologies</span>
+        <div class="filter-bar tech-list">
+          <!-- Languages & Compute -->
+          <span class="badge-pill">Python</span>
+          <span class="badge-pill">R</span>
+          <span class="badge-pill">Nextflow</span>
+          
+          <!-- AI / Bio-AI -->
+          <span class="badge-pill">PyTorch</span>
+          <span class="badge-pill">LLMOps</span>
+          <span class="badge-pill">Genomic Foundation Models</span>
+          
+          <!-- Omics & Analysis -->
+          <span class="badge-pill">WGS</span>
+          <span class="badge-pill">Variant Calling</span>
+          <span class="badge-pill">RNA-seq</span>
+          <span class="badge-pill">GWAS</span>
+          <span class="badge-pill">Illumina DRAGEN</span>
+          
+          <!-- Infrastructure & Reproducibility -->
+          <span class="badge-pill">HPC</span>
+          <span class="badge-pill">Docker</span>
+          <span class="badge-pill">FAIR Data</span>
+          <span class="badge-pill">Quarto</span>
+        </div>
+    </div>
+  </div>
+  <div class="profile-card">
+    <img src="/assets/photo.png" alt="{{ site.author.name }}" class="hero-photo">
+    <h3>{{ site.author.name }}</h3>
+    <div class="profile-roles">
+      <p><strong>Bioinformatics Specialist</strong><br>Ardigen</p>
+      <div class="profile-role-item">
+        <strong>External Research Partner</strong>
+        <ul class="profile-partner-list">
+          <li>Poznan University of Medical Sciences</li>
+          <li>Wrocław University of Environmental and Life Sciences</li>
+        </ul>
+      </div>
+      <p><strong>Bioinformatics Consulting & Solutions</strong><br>Private B2B Practice</p>
+    </div>
+  </div>
+</div>
+
+<!-- Large Statement Banner -->
+<cite class="statement-banner">From raw sequencing data to interpretable biological insight.</cite>
+
+<!-- Research Agenda Section -->
+<section id="research">
+    <div class="container">
+  <h2 class="section-title">Bioinformatics, Biostatistics, and Genetics Data Science</h2>
+
+  <div class="pillars-2x2">
+    <div class="pillar-card">
+      <div class="pillar-code">01 Data</div>
+      <h3>Genetics data pipelines</h3>
+      <p>Designing scalable ingestion and curation systems for genomics, transcriptomics, multi-omics, and clinical data using Nextflow, HPC, and reproducible workflows.</p>
+    </div>
+
+    <div class="pillar-card">
+      <div class="pillar-code">02 Analysis</div>
+      <h3>Biostatistical inference</h3>
+      <p>Applying rigorous statistical frameworks to WGS, RNA-seq, variant prioritization, eQTL analysis, and population-scale genetic questions.</p>
+    </div>
+
+    <div class="pillar-card">
+      <div class="pillar-code">03 AI</div>
+      <h3>Explainable models</h3>
+      <p>Leveraging deep learning and interpretable AI for high-dimensional biological datasets while preserving biological plausibility and transparency.</p>
+    </div>
+
+    <div class="pillar-card">
+      <div class="pillar-code">04 Translation</div>
+      <h3>Biomedical impact</h3>
+      <p>Turning complex genetics and omics data into actionable insights for biomarker discovery, rare disease interpretation, and precision medicine.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Publications Section -->
+<section id="publications">
+<div class="container">
+  <div class="section-header">
+    <h2 class="section-title">Selected Publications</h2>
+    <a href="#" class="section-link">all publications</a>
+  </div>
+
+    <div class="filter-bar">
+    <button class="filter-chip active" data-category="all" onclick="filterCategory('all', this)">All</button>
+    <button class="filter-chip" data-category="genomics" onclick="filterCategory('genomics', this)">Genomics</button>
+    <button class="filter-chip" data-category="statgen" onclick="filterCategory('statgen', this)">Statistical Genetics</button>
+    <button class="filter-chip" data-category="immunogenomics" onclick="filterCategory('immunogenomics', this)">Immunogenomics</button>
+    <button class="filter-chip" data-category="pipelines" onclick="filterCategory('pipelines', this)">Pipelines</button>
+    </div>
+  <div>
+    {% assign publications = site.data.publications | sort: 'year' | reverse %}
+    {% for pub in publications %}
+      <div class="pub-row" data-category="{{ pub.category }}">
+        <div class="pub-year">{{ pub.year }}</div>
+        <div>
+          {% if pub.link and pub.link != "" and pub.link != "#" %}
+            <a href="{{ pub.link }}" target="_blank" rel="noopener" class="pub-title">{{ pub.title }}</a>
+          {% else %}
+            <span class="pub-title">{{ pub.title }}</span>
+          {% endif %}
+          <div class="pub-venue">{{ pub.venue }}</div>
+          <div>
+            {% for tag in pub.tags %}
+              <span class="badge-pill">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  </div>
+</section>
+
+<!-- Conference Highlights Section -->
+<section id="conferences">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Conference Highlights</h2>
+      <a href="https://www.researchgate.net/profile/Krzysztof-Kotlarz-2" class="section-link">all conferences</a>
+    </div>
+
+    {% assign conferences = site.data.conferences | sort: "year" | reverse %}
+    <div class="conference-list">
+      {% for item in conferences %}
+        <article class="conference-item">
+          <div class="conference-meta">
+            <span class="conference-year">{{ item.year }}</span>
+            <div class="conference-meta-right">
+              {% if item.link and item.link != '#' %}
+                <a href="{{ item.link | relative_url }}" target="_blank" rel="noopener" class="badge-pill conference-link">View</a>
+              {% endif %}
+              <span class="conference-badge">{{ item.type }}</span>
+            </div>
+          </div>
+          <div class="conference-content">
+            {% if item.link and item.link != '#' %}
+              <h3><a href="{{ item.link | relative_url }}" target="_blank" rel="noopener" class="pub-title">{{ item.title }}</a></h3>
+            {% else %}
+              <h3>{{ item.title }}</h3>
+            {% endif %}
+            <p class="conference-venue">{{ item.conference }} · {{ item.location }}</p>
+            <p class="conference-summary">{{ item.summary }}</p>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-card">
+      <div class="contact-copy">
+        <h2 class="section-title">Working together</h2>
+        <p>
+          I collaborate on genetics and omics data analysis, clinical variant interpretation, biomarker discovery, statistical genetics, and AI-driven biomedical research where reproducibility, interpretability, and biological insight matter.
+        </p>
+      </div>
+
+      <div class="contact-actions">
+        <a href="mailto:{{ site.email }}" class="contact-link primary">Email me</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=fhJnkk4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener" class="contact-link">Scholar</a>
+        <a href="https://github.com/kotlarzkrzysztof" target="_blank" rel="noopener" class="contact-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/krzysztof-kotlarz-phd-5a24bb236" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>

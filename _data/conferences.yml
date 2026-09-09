@@ -1,0 +1,63 @@
+- year: 2024
+  type: "Poster"
+  title: "International Conference of Quantitative Genetics"
+  conference: "ICQG"
+  location: "Vienna, Austria"
+  summary: "Rank aggregation-based feature selection for comprehensive multi-breed cattle classification"
+  link: "#"
+
+- year: 2024
+  type: "Poster"
+  title: "THE EUROPEAN SOCIETY OF HUMAN GENETICS 2024"
+  conference: "ESHG"
+  location: "Berlin, Germany"
+  summary: "Differences in cell type composition in the liver by the linear mixed model in the deconvolution method under thermal stress conditions"
+  link: "#"
+
+- year: 2023
+  type: "Poster"
+  title: "The European Federation of Animal Science 2023"
+  conference: "EAAP"
+  location: "Lyon, France"
+  summary: "Enhancing bovine genome SNP call accuracy with autoencoder analysis of nucleotide impact with AI"
+  link: "#"
+
+- year: 2022
+  type: "Oral"
+  title: "The European Federation of Animal Science 2022"
+  conference: "EAAP"
+  location: "Porto, Portugal"
+  summary: "Classification of cows into mastitis prone and mastitis resistant using a deep learning approach with model regularisation"
+  link: "#"
+
+- year: 2022
+  type: "Oral"
+  title: "World Congress on Genetics Applied to Livestock Production 2022"
+  conference: "WCGALP"
+  location: "Rotterdam, Netherlands"
+  summary: "The application of mixed linear models for the estimation of functional effects on bovine stature based on SNP summary statistics from a whole-genome association study"
+  link: "#"
+
+- year: 2021
+  type: "Oral"
+  title: "The European Federation of Animal Science 2021"
+  conference: "EAAP"
+  location: "Davos, Switzerland"
+  summary: "Identification of heat stress responsive transcripts in Sprague-Dawley rats using mixed linear models"
+  link: "#"
+
+- year: 2020
+  type: "Oral"
+  title: "The European Federation of Animal Science 2020"
+  conference: "EAAP"
+  location: "Online"
+  summary: "Don’t play too much! Deep learning to classify true and false positive SNPs in whole genome sequence"
+  link: "#"
+
+- year: 2020
+  type: "Oral"
+  title: "Polish Bioinformatics Society 2020"
+  conference: "PTBI"
+  location: "Online"
+  summary: "DIG (DEEP)ER Deep learning algorithms for the imbalanced classification of correct and incorrect SNP genotypes from WGS pipelines"
+  link: "#"

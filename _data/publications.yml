@@ -1,0 +1,90 @@
+- title: "High-Sensitivity HPV Circulating Tumor DNA (ctDNA) Outperforms Conventional Imaging for Immediate Post-Treatment Risk Stratification in Oropharyngeal Cancer"
+  venue: "International Journal of Radiation Oncology*Biology*Physics"
+  year: 2026
+  category: "oncology"
+  tags: ["ctDNA", "HPV", "Oropharyngeal Cancer", "Risk Stratification"]
+  link: "https://www.redjournal.org/article/S0360-3016(26)00295-6/abstract"
+
+- title: "Feature Selection Strategies for Deep Learning-Based Classification in Ultra-High-Dimensional Genomic Data"
+  venue: "International Journal of Molecular Sciences"
+  year: 2025
+  category: "genomics"
+  tags: ["Feature Selection", "Deep Learning", "Genomics"]
+  link: "https://www.mdpi.com/1422-0067/26/16/7961"
+
+- title: "Are head and neck versus abdominal paragangliomas driven by different single nucleotide events?"
+  venue: "Journal of Applied Genetics"
+  year: 2025
+  category: "genomics"
+  tags: ["Paraganglioma", "SNVs", "Genomics"]
+  link: "https://link.springer.com/article/10.1007/s13353-025-00994-0"
+
+- title: "Exploring the impact of sequence context on errors in SNP genotype calling with whole genome sequencing data using AI-based autoencoder approach"
+  venue: "NAR Genomics and Bioinformatics"
+  year: 2024
+  category: "genomics"
+  tags: ["Autoencoder", "SNP Genotyping", "WGS", "AI"]
+  link: "https://academic.oup.com/nargab/article/6/3/lqae131/7770962"
+
+- title: "Nextflow vs. plain bash: different approaches to the parallelization of SNP calling from the whole genome sequence data"
+  venue: "NAR Genomics and Bioinformatics"
+  year: 2024
+  category: "pipelines"
+  tags: ["Nextflow", "Bioinformatics Pipelines", "WGS"]
+  link: "https://academic.oup.com/nargab/article/6/2/lqae040/7659592"
+
+- title: "An explainable deep learning classifier of bovine mastitis based on whole-genome sequence data—Circumventing the p>> n Problem"
+  venue: "International Journal of Molecular Sciences"
+  year: 2024
+  category: "genomics"
+  tags: ["Deep Learning", "WGS", "XAI", "Genomics"]
+  link: "https://www.mdpi.com/1422-0067/25/9/4715"
+
+- title: "IVIg Use Associated with Ten-Fold Reduction of Serious Infections in Multiple Myeloma Patients Treated with Anti-BCMA Bispecific Antibodies"
+  venue: "Blood Cancer Discovery"
+  year: 2023
+  category: "immunology"
+  tags: ["IVIg", "Multiple Myeloma", "Bispecific Antibodies"]
+  link: "https://aacrjournals.org/bloodcancerdiscov/article/4/6/440/729755/IVIg-Use-Associated-with-Ten-Fold-Reduction-of"
+
+- title: "Better safe than sorry—Whole-genome sequencing indicates that missense variants are significant in susceptibility to COVID-19"
+  venue: "PLoS ONE"
+  year: 2023
+  category: "immunogenomics"
+  tags: ["WGS", "Variant Analysis", "COVID-19"]
+  link: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0279356"
+
+- title: "Application of mixed linear models for the estimation of functional effects on bovine stature based on SNP summary statistics from a whole-genome association study"
+  venue: "Genetics Selection Evolution"
+  year: 2022
+  category: "statgen"
+  tags: ["Mixed Models", "GWAS", "Genomics"]
+  link: "https://link.springer.com/article/10.1186/s12711-022-00771-1"
+
+- title: "Gene Variants Related to Cardiovascular and Pulmonary Diseases May Correlate with Severe Outcome of COVID-19"
+  venue: "International Journal of Molecular Sciences"
+  year: 2022
+  category: "immunogenomics"
+  tags: ["COVID-19", "Gene Variants", "Genomics"]
+  link: "https://www.mdpi.com/1422-0067/23/15/8696"
+
+- title: "Beyond GWAS—could genetic differentiation within the allograft rejection pathway shape natural immunity to COVID-19?"
+  venue: "International Journal of Molecular Sciences"
+  year: 2022
+  category: "immunogenomics"
+  tags: ["GWAS", "Pathways", "COVID-19"]
+  link: "https://www.mdpi.com/1422-0067/23/11/6272"
+
+- title: "Identification of functional features underlying heat stress response in Sprague–Dawley rats using mixed linear models"
+  venue: "Scientific Reports"
+  year: 2022
+  category: "statgen"
+  tags: ["Mixed Models", "Transcriptomics", "Heat Stress"]
+  link: "https://www.nature.com/articles/s41598-022-11701-y"
+
+- title: "The application of deep learning for the classification of correct and incorrect SNP genotypes from whole-genome DNA sequencing pipelines"
+  venue: "Journal of Applied Genetics"
+  year: 2020
+  category: "genomics"
+  tags: ["Deep Learning", "SNP Genotyping", "Quality Control"]
+  link: "https://link.springer.com/article/10.1007/s13353-020-00586-0"
