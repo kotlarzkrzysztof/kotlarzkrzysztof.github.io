@@ -124,15 +124,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
       updateActiveSection();
 
+      const navbar = document.querySelector('.navbar');
+      const updateNavbar = () => {
+        if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 4);
+      };
+
       let ticking = false;
       window.addEventListener('scroll', () => {
         if (ticking) return;
         ticking = true;
         window.requestAnimationFrame(() => {
           updateActiveSection();
+          updateNavbar();
           ticking = false;
         });
       }, { passive: true });
+
+      // Set correct state on page load (e.g. after refresh mid-page)
+      updateNavbar();
     }
   }
 });

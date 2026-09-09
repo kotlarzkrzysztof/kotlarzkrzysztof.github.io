@@ -147,9 +147,14 @@ img, iframe, video, table, pre, code {
   background: var(--navbar-bg, rgba(255, 255, 255, 0.85));
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
   z-index: 9999;
   padding: 0.55rem 0;
+}
+
+.navbar.scrolled {
+  border-bottom-color: var(--border);
 }
 
 .nav-flex {
